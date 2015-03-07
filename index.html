@@ -15,12 +15,13 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <style type="text/css">
           
+
+
           main
           {
             width: 11in;
             height: 8.5in;
             position: relative;
-            
           }
           
           div 
@@ -42,13 +43,13 @@
           {
             border-left: solid 6px #666;
             border-bottom: solid 6px #666;
-            top:-6px;
-            right:-6px;
+            top:6px;
+            right:6px;
           }
           .topLeftBrdr
           {
-            top:-6px;
-            left:-6px;
+            top:6px;
+            left:6px;
             border-right: solid 6px #666;
             border-bottom: solid 6px #666;
           }
@@ -56,20 +57,19 @@
           {
             border-left: solid 6px #666;
             border-top: solid 6px #666;
-            bottom:-6px;
-            right: -6px;
+            bottom:6px;
+            right: 6px;
           }
           .botLeftBrdr
           {
             border-right: solid 6px #666;
             border-top: solid 6px #666;
-            bottom: -6px;
-            left: -6px;
+            bottom: 6px;
+            left: 6px;
           }
             
           .certBorder
           {
-            border: solid 6px #666;
             position: absolute;
             top: 48px;
             left: 48px;
@@ -77,29 +77,50 @@
             bottom: 48px;
           }
 
+          .certBorderLR
+          {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top:36px;
+            bottom:36px;
+            border-left: solid 6px #666;
+            border-right: solid 6px #666;
+          }
+          .certBorderTB
+          {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left:36px;
+            right:36px;
+            border-top: solid 6px #666;
+            border-bottom: solid 6px #666;
+          }
+          
           .certBorderInner
           {
             position: absolute;
-            top: 6px;
-            left: 6px;
-            right: 6px;
-            bottom: 6px;
+            top: 14px;
+            left: 14px;
+            right: 14px;
+            bottom: 14px;
             border: solid 12px #a71930;
             z-index: 2;
           }
 
           .certBg
           {
-            background: url('img/eagle-black-and-white-hi.png') no-repeat center;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
-            opacity: 0.1;
+            opacity: 0.2;
+            text-align: center;
+            vertical-align: middle;
+            margin-top:106px;
           }
-
-          
 
           .who
           {
@@ -121,13 +142,9 @@
           .who span
           {
             font-family: 'Crimson Text', serif;
+            font-size: 18px;
             width: 100%;
             text-align: center;
-          }
-
-          .what
-          {
-
           }
 
           .what h1
@@ -159,7 +176,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 38px;
             height: 240px;
           }
 
@@ -168,6 +185,9 @@
             float: left;
             display: inline-block;
             width: 40%;
+            height: 100%;
+            text-align: center;      
+            margin-top: 45px;
           }
 
           .when .right
@@ -175,6 +195,7 @@
             float: left;
             display: inline-block;
             width: 60%;
+            height: 100%;
           }
         
           .when .info
@@ -183,8 +204,8 @@
             font-size: 24px;
             width: 100%;
             padding-right: 60px;
-            padding-top: 30px;
-            height: 80px;
+            padding-top: 37px;
+            height: 50%;
 
           }
 
@@ -194,6 +215,7 @@
             display: inline-block;
             width: 30%;
             padding-top: 6px;
+            text-align: left;
           }
 
           .info div
@@ -201,10 +223,6 @@
             float: left;
             width: 70%;
             display: inline-block;
-          }
-
-          .blank
-          {
             border-bottom: solid 2px #333;
           }
 
@@ -213,14 +231,7 @@
             text-align: center;
           }
 
-          .certViz
-          {
-            float:left;
-            width: 40%;
-            background: #ccc;
-            height: 192px;
-          }
-
+          
         </style>
     </head>
     <body>
@@ -231,12 +242,16 @@
         <!-- Add your site or application content here -->
         <main>  
           <div class="certBorder">
+            <div class="certBorderTB"></div>
+            <div class="certBorderLR"></div>
             <div class="botRightBrdr cornerBorder"></div>
             <div class="botLeftBrdr cornerBorder"></div>
             <div class="topRightBrdr cornerBorder"></div>
             <div class="topLeftBrdr cornerBorder"></div>
             <div class="certBorderInner">
-              <div class="certBg"></div>
+              <div class="certBg">
+                <img src="img/eagle-black-and-white-hi.png">
+              </div>
               <div class="certContent">
                 <div class="what">
                   <h1>MOST VALUABLE PLAYER</h1>
@@ -250,16 +265,16 @@
                 </div>
                 <div class="when">
                   <div class="left">
-                    content
+                    <img src="img/ball.png">
                   </div>
                   <div class="right">
                     <div class="info">
                       <label>Presented By</label>
-                      <div class="blank">&nbsp;</div>
+                      <div>&nbsp;</div>
                     </div>
                     <div class="info">
                       <label>On this day</label>
-                      <div class="blank">&nbsp;</div>
+                      <div>&nbsp;</div>
                     </div>
                   </div>
                 </div>
