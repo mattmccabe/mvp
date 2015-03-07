@@ -9,12 +9,218 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href='http://fonts.googleapis.com/css?family=Crimson+Text|Bangers|Sintony' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <style type="text/css">
           
+          main
+          {
+            width: 11in;
+            height: 8.5in;
+            position: relative;
+            
+          }
+          
+          div 
+          {
+            box-sizing: border-box;
+          }
+          
+      
+          .cornerBorder
+          {
+            background-color: #fff;
+            position:absolute;
+            width: 36px;
+            height: 36px;
+            z-index: 1;
+          }
+        
+          .topRightBrdr
+          {
+            border-left: solid 6px #666;
+            border-bottom: solid 6px #666;
+            top:-6px;
+            right:-6px;
+          }
+          .topLeftBrdr
+          {
+            top:-6px;
+            left:-6px;
+            border-right: solid 6px #666;
+            border-bottom: solid 6px #666;
+          }
+          .botRightBrdr
+          {
+            border-left: solid 6px #666;
+            border-top: solid 6px #666;
+            bottom:-6px;
+            right: -6px;
+          }
+          .botLeftBrdr
+          {
+            border-right: solid 6px #666;
+            border-top: solid 6px #666;
+            bottom: -6px;
+            left: -6px;
+          }
+            
+          .certBorder
+          {
+            border: solid 6px #666;
+            position: absolute;
+            top: 48px;
+            left: 48px;
+            right: 48px;
+            bottom: 48px;
+          }
+
+          .certBorderInner
+          {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            border: solid 12px #a71930;
+            z-index: 2;
+          }
+
+          .certBg
+          {
+            background: url('img/eagle-black-and-white-hi.png') no-repeat center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.1;
+          }
+
+          
+
+          .who
+          {
+            width: 100%;
+            margin-top: 96px;
+            padding-left: 96px;
+            padding-right: 96px;
+          }
+
+          .who h1
+          {
+            border-bottom: solid 2px #333;
+            width: 100%;
+          }
+          .who h1:after
+          {
+            content: ' ';
+          }
+          .who span
+          {
+            font-family: 'Crimson Text', serif;
+            width: 100%;
+            text-align: center;
+          }
+
+          .what
+          {
+
+          }
+
+          .what h1
+          {
+            width:100%;
+            text-align:center;
+            font-family: 'Bangers', cursive;
+            text-shadow: -4px 3px 0 #fff, -14px 7px 0 #a71930;
+            color:#333;
+            font-size: 84px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+          }
+
+          .team
+          { 
+            text-align: center; 
+          }
+
+          .team h2
+          {
+            margin: 20px 0;
+            font-family: 'Sintony', sans-serif;
+            font-size: 64px;
+          }
+
+          .when
+          {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 240px;
+          }
+
+          .when .left
+          {
+            float: left;
+            display: inline-block;
+            width: 40%;
+          }
+
+          .when .right
+          {
+            float: left;
+            display: inline-block;
+            width: 60%;
+          }
+        
+          .when .info
+          {
+            font-family: 'Crimson Text', serif;
+            font-size: 24px;
+            width: 100%;
+            padding-right: 60px;
+            padding-top: 30px;
+            height: 80px;
+
+          }
+
+          .info label
+          {
+            float: left;
+            display: inline-block;
+            width: 30%;
+            padding-top: 6px;
+          }
+
+          .info div
+          {
+            float: left;
+            width: 70%;
+            display: inline-block;
+          }
+
+          .blank
+          {
+            border-bottom: solid 2px #333;
+          }
+
+          .certContent
+          {
+            text-align: center;
+          }
+
+          .certViz
+          {
+            float:left;
+            width: 40%;
+            background: #ccc;
+            height: 192px;
+          }
+
         </style>
     </head>
     <body>
@@ -23,22 +229,50 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <main>
-
+        <main>  
+          <div class="certBorder">
+            <div class="botRightBrdr cornerBorder"></div>
+            <div class="botLeftBrdr cornerBorder"></div>
+            <div class="topRightBrdr cornerBorder"></div>
+            <div class="topLeftBrdr cornerBorder"></div>
+            <div class="certBorderInner">
+              <div class="certBg"></div>
+              <div class="certContent">
+                <div class="what">
+                  <h1>MOST VALUABLE PLAYER</h1>
+                </div>
+                <div class="who">
+                  <h1></h1>
+                  <span>is hereby recognized as the game's Most Valuable Player for phenomenal participation on</span>
+                </div>
+                <div class="team">
+                  <h2>The Eagles</h2>
+                </div>
+                <div class="when">
+                  <div class="left">
+                    content
+                  </div>
+                  <div class="right">
+                    <div class="info">
+                      <label>Presented By</label>
+                      <div class="blank">&nbsp;</div>
+                    </div>
+                    <div class="info">
+                      <label>On this day</label>
+                      <div class="blank">&nbsp;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        
     </body>
 </html>
